@@ -1,0 +1,206 @@
+.contacts {
+   background-color: #262022;
+   //padding: 0px 0px 0px 0px;
+   // .contacts__row
+   &__row {
+     // height: 100%;
+      background: url('../img/footer/bg.png') no-repeat;
+      background-position: center;
+      background-size: 95% 100%;
+     // background-size: cover;
+      @include flexbox();
+      justify-content: space-between;
+      padding: 30px 0px 70px 0px;
+      @media (max-width:$md3+px){
+         flex-wrap: wrap;
+         justify-content: center;
+         background-size: 97% 98%;
+         //display: block;
+         //text-align: center;
+         //width: 100%;
+         //margin: 0 auto;
+      }
+      @media (max-width:$md4+px){
+         padding: 20px 0px 30px 0px;
+      }
+   }
+   // .contacts__col
+   &__col {
+      
+   }
+   &__col_adr{
+      max-width: 225px;
+      @media (max-width:$md3+px){
+         max-width: none;
+      }
+   }
+   &__col_log{
+      text-align: center;
+   }
+   &__col_li{
+      
+   }
+   // .contacts__social
+   &__social {
+      padding: 20px 20px 25px 20px;
+      margin: 0px 0px 25px 0px;
+      background-color: #1D1D1D;
+   }
+   // .contacts__adress
+   &__adress {
+      text-align: center;
+      p{
+         font-size: 16px;
+         line-height: 14px;
+         font-weight: 400;
+         letter-spacing: 0.1em;
+         color: #ffffff;
+         margin: 0px 0px 12px 0px;
+      }
+      a{
+         background-color: #ed1c24;
+         font-family: 'Roboto';
+         font-size: 18px;
+         line-height: 38px;
+         font-weight: 900;
+         letter-spacing: 0.025em;
+         color: #e8dfbc;
+         padding: 0px 10px;
+         margin: 0px 0px 25px 0px;
+         display: inline-block;
+         @include anim(0.3s,0s);
+         &:hover{
+            background-color: #533305;
+         }
+      }
+      span{
+         font-size: 13px;
+         font-weight: 400;
+         letter-spacing: 0.1em;
+         color: #ffffff;
+         display: block;
+         margin: 10px 0px 0px 0px;
+      }
+   }
+   // .contacts__logo
+   &__logo {
+      display: block;
+      padding: 0px 0px 60px 0px;
+      @media (max-width:$md4+px){
+         img{
+            max-width: 250px;
+         }
+         padding: 0px 0px 20px 0px;
+      }
+      
+   }
+   // .contacts__copy
+   &__copy {
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      span{
+         font-size: 28px;
+         padding: 0px 10px 0px 0px;
+      }
+   }
+   // .contacts__links
+   &__links {
+      text-align: center;
+      ul{
+         padding: 30px 0px 0px 0px;
+         li{
+            margin: 0px 0px 20px 0px;
+            position: relative;
+         }
+      }
+   }
+   &__list{
+      @include flexbox();
+   }
+   // .contacts__link
+   &__link {
+      position: relative;
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #ffffff;
+      &:hover{
+         &:before{
+            content:'';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            border-left: 2px solid #ED1C24;
+            width: 100%;
+            height: 100%;
+         }
+         &:after{
+            content:'';
+            position: absolute;
+            right: -10px;
+            top: 0;
+            border-right: 2px solid #ED1C24;
+            width: 100%;
+            height: 100%;
+         }
+      }
+      @media (max-width:$md4+px){
+         font-size: 17px;
+      }
+   }
+   // .contacts__up
+   &__up {
+      padding: 60px 0px 0px 0px;
+      text-align: center;
+      a{
+         background-color: #000;
+         display: inline-block;
+         padding: 5px 10px 5px 10px;
+         font-size: 16px;
+         line-height: 14px;
+         font-weight: 400;
+         letter-spacing: 0.1em;
+         color: #ffffff;
+      }
+   @media (max-width:$md4+px){
+      padding: 20px 0px 0px 0px;
+   } 
+   }
+
+}
+.social {
+   text-align: center;
+   max-width: 225px;
+   @media (max-width:$md3+px){
+      //max-width: 225px;
+      //margin: 0 auto;
+   }
+}
+.social-title {
+   font-size: 16px;
+   line-height: 18px;
+   font-weight: 400;
+   letter-spacing: 0.1em;
+   color: #ffffff;
+  // max-width: 140px;
+   text-align: center;
+   margin: 0px 0px 20px 0px;
+}
+.social-images {
+   a{
+      padding: 0px 10px 0px 0px;
+      &:last-child{
+         padding: 0px 0px 0px 0px;
+      }
+   }
+   img{
+      height: 45px;
+   }
+}
